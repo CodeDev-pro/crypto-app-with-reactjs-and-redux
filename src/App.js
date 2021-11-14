@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { decrement, increment, reset, setValue } from "./domain/redux/counter/counter_type";
-import { getCryptos } from "./domain/redux/cryptos/crypto_type";
 import Auth from "./ui/auth/Auth";
 import "./App.css"
+import CryptoApp from "./ui/home/CryptoApp";
 
 const App = () => {
     const dispatch = useDispatch()
@@ -12,7 +11,7 @@ const App = () => {
     console.log(state)
     return(
         <div className = "app">
-            <Auth />
+            <CryptoApp />
         </div>
     )
 }

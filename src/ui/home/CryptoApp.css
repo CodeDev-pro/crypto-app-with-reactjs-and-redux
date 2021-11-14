@@ -1,0 +1,53 @@
+.crypto_app {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 25%;
+    height: 100%;
+    background-color: rgb(250, 250, 250);
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.sidebar_item {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    margin-bottom: 10px;
+}
+
+.sidebar_item:hover {
+    background-color: #42a4f556;
+    box-sizing: border-box;
+}
+
+.sidebar_item.selected {
+    background-color: #42a4f556;
+    box-sizing: border-box;
+}
+
+.icon_wrapper {
+    padding: 5px;
+    background-color: #1976d225;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_wrapper.selected {
+    background-color: #1976d2;
+}
+
+.icon {
+    
+}
