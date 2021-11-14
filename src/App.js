@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { decrement, increment, reset, setValue } from "./domain/redux/counter/counter_type";
+import { getCryptos } from "./domain/redux/cryptos/crypto_type";
+import Auth from "./ui/auth/Auth";
+import "./App.css"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    const dispatch = useDispatch()
+    const state = useSelector(state => state.cryptos);
+    const [count, setCount] = useState(state)
+    console.log(state)
+    return(
+        <div className = "app">
+            <Auth />
+        </div>
+    )
 }
 
 export default App;

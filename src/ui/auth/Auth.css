@@ -1,0 +1,32 @@
+.auth {
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+img {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -20;
+}
+
+.login_container_wrapper {
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+
+.auth_container {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+}
